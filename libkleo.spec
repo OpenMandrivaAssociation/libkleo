@@ -27,6 +27,7 @@ BuildRequires: cmake(KF5AkonadiSearch)
 BuildRequires: cmake(KF5Mime)
 BuildRequires: cmake(KF5Gpgmepp)
 BuildRequires: cmake(KF5PimTextEdit)
+BuildRequires: boost-devel
 
 %description
 KDE library for PIM handling
