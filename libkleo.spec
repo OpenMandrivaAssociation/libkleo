@@ -26,6 +26,7 @@ BuildRequires: sasl-devel
 BuildRequires: cmake(KF5AkonadiSearch)
 BuildRequires: cmake(KF5Mime)
 BuildRequires: cmake(KF5Gpgmepp)
+BuildRequires: cmake(KF5PimTextEdit)
 
 %description
 KDE library for PIM handling
