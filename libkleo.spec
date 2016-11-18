@@ -51,16 +51,16 @@ Development files (Headers etc.) for %{name}.
 %prep
 %setup -q
 %apply_patches
+%cmake_kde5
 
 %build
-%cmake_kde5
-cd ../
 %ninja -C build
 
 %install
 %ninja_install -C build
 
 %files
+%{_sysconfdir}/xdg/libkleo.categories
 %{_sysconfdir}/xdg/libkleopatrarc
 %{_datadir}/libkleopatra
 
