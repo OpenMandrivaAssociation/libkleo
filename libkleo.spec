@@ -5,7 +5,7 @@
 Name: libkleo
 # This was in kdepim before
 Epoch: 3
-Version:	16.12.2
+Version:	17.04.0
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
@@ -25,8 +25,8 @@ BuildRequires: cmake(Qt5Qml)
 BuildRequires: sasl-devel
 BuildRequires: cmake(KF5AkonadiSearch)
 BuildRequires: cmake(KF5Mime)
-BuildRequires: cmake(KF5Gpgmepp)
 BuildRequires: cmake(KF5PimTextEdit)
+BuildRequires: cmake(QGpgme)
 BuildRequires: boost-devel
 
 %description
@@ -58,8 +58,9 @@ Development files (Headers etc.) for %{name}.
 
 %install
 %ninja_install -C build
+%find_lang libkleopatra
 
-%files
+%files -f libkleopatra.lang
 %{_sysconfdir}/xdg/libkleo.categories
 %{_sysconfdir}/xdg/libkleo.renamecategories
 %{_sysconfdir}/xdg/libkleopatrarc
