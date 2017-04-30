@@ -27,6 +27,7 @@ BuildRequires: cmake(KF5AkonadiSearch)
 BuildRequires: cmake(KF5Mime)
 BuildRequires: cmake(KF5PimTextEdit)
 BuildRequires: cmake(QGpgme)
+BuildConflicts: kdepimlibs4-devel >= 3:4.14.10
 BuildRequires: boost-devel
 
 %description
