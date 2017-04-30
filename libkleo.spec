@@ -30,7 +30,7 @@ BuildRequires: cmake(QGpgme)
 BuildRequires: boost-devel
 
 %description
-KDE library for PIM handling
+KDE library for PIM handling.
 
 %package -n %{libname}
 Summary: KDE library for PIM handling
@@ -38,7 +38,7 @@ Group: System/Libraries
 Requires: %{name} = %{EVRD}
 
 %description -n %{libname}
-KDE library for PIM handling
+KDE library for PIM handling.
 
 %package -n %{devname}
 Summary: Development files for %{name}
