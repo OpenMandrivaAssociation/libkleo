@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   libkleo-17.12.1.tar.xz: a932e94a388669a7c007f0dede87244e3dec36e9
+sources:
+  libkleo-17.12.2.tar.xz: a5fdb2c3390c4d92410e09f1b70565e030fda3a7
