@@ -5,7 +5,7 @@
 Name: libkleo
 # This was in kdepim before
 Epoch: 3
-Version:	19.04.3
+Version:	19.07.80
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
@@ -64,8 +64,8 @@ Development files (Headers etc.) for %{name}.
 %find_lang libkleopatra
 
 %files -f libkleopatra.lang
-%{_sysconfdir}/xdg/libkleo.categories
-%{_sysconfdir}/xdg/libkleo.renamecategories
+%{_datadir}/qlogging-categories5/libkleo.categories
+%{_datadir}/qlogging-categories5/libkleo.renamecategories
 %{_sysconfdir}/xdg/libkleopatrarc
 %{_datadir}/libkleopatra
 
