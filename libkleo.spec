@@ -31,6 +31,9 @@ BuildRequires: cmake(Gpgmepp)
 BuildRequires: cmake(QGpgme)
 BuildConflicts: kdepimlibs4-devel >= 3:4.14.10
 BuildRequires: boost-devel
+# For QCH format docs
+BuildRequires: doxygen
+BuildRequires: qt5-assistant
 
 %description
 KDE library for PIM handling.
