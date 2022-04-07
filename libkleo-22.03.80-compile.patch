@@ -1,0 +1,12 @@
+diff -up libkleo-22.03.80/src/CMakeLists.txt.omv~ libkleo-22.03.80/src/CMakeLists.txt
+--- libkleo-22.03.80/src/CMakeLists.txt.omv~	2022-04-07 12:15:19.950062109 +0200
++++ libkleo-22.03.80/src/CMakeLists.txt	2022-04-07 12:16:52.526463929 +0200
+@@ -22,6 +22,8 @@ endif()
+ add_library(KF5Libkleo)
+ add_library(KF5::Libkleo ALIAS KF5Libkleo)
+ 
++set_source_files_properties(kleo/keyserverconfig.cpp PROPERTIES COMPILE_FLAGS -std=c++20)
++
+ ########### next target ###############
+ target_sources(KF5Libkleo PRIVATE
+    kleo/checksumdefinition.cpp

@@ -14,6 +14,7 @@ Version:	22.03.80
 %endif
 Release:	1
 Source0: http://download.kde.org/%{ftpdir}/release-service/%{version}/src/%{name}-%{version}.tar.xz
+Patch0: libkleo-22.03.80-compile.patch
 Summary: KDE library for PIM handling
 URL: http://kde.org/
 License: GPL
@@ -27,6 +28,8 @@ BuildRequires: cmake(KF5AkonadiSearch)
 BuildRequires: cmake(KF5Mime)
 BuildRequires: cmake(KF5PimTextEdit)
 BuildRequires: cmake(KF5WindowSystem)
+BuildRequires: cmake(KF5Sonnet)
+BuildRequires: cmake(KF5TextWidgets)
 BuildRequires: cmake(Gpgmepp)
 BuildRequires: cmake(QGpgme)
 BuildConflicts: kdepimlibs4-devel >= 3:4.14.10
@@ -55,8 +58,7 @@ Requires: %{libname} = %{EVRD}
 Development files (Headers etc.) for %{name}.
 
 %prep
-%setup -q
-%autopatch -p1
+%autosetup -p1
 %cmake_kde5
 
 %build
