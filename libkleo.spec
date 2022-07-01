@@ -12,7 +12,7 @@ Version:	22.04.2
 %else
 %define ftpdir stable
 %endif
-Release:	1
+Release:	2
 Source0: http://download.kde.org/%{ftpdir}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 Patch0: libkleo-22.03.80-compile.patch
 Summary: KDE library for PIM handling
