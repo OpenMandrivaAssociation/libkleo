@@ -1,3 +1,7 @@
+# CMake files check for Qt 6.x already, but it's not used yet,
+# so let's not make it a hard dependency
+%global __requires_exclude ^.*qt6.*$
+
 %define major 5
 %define libname %mklibname KF5Libkleo %{major}
 %define devname %mklibname KF5Libkleo -d
