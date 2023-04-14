@@ -9,16 +9,15 @@
 Name: libkleo
 # This was in kdepim before
 Epoch: 3
-Version:	22.12.3
+Version:	23.03.90
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
 %else
 %define ftpdir stable
 %endif
-Release:	2
+Release:	1
 Source0: http://download.kde.org/%{ftpdir}/release-service/%{version}/src/%{name}-%{version}.tar.xz
-Patch0: libkleo-22.03.80-compile.patch
 Summary: KDE library for PIM handling
 URL: http://kde.org/
 License: GPL
