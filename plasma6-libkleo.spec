@@ -3,7 +3,7 @@
 %define devname %mklibname KPim6Libkleo -d
 
 Name: plasma6-libkleo
-Version:	24.01.85
+Version:	24.01.90
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
@@ -65,9 +65,9 @@ Development files (Headers etc.) for %{name}.
 
 %install
 %ninja_install -C build
-%find_lang libkleopatra
+%find_lang libkleopatra6
 
-%files -f libkleopatra.lang
+%files -f libkleopatra6.lang
 %{_datadir}/qlogging-categories6/libkleo.categories
 %{_datadir}/qlogging-categories6/libkleo.renamecategories
 %{_sysconfdir}/xdg/libkleopatrarc
