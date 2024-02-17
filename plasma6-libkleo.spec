@@ -15,7 +15,7 @@ Version:	24.01.96
 %endif
 Release:	%{?git:0.%{git}.}1
 %if 0%{?git:1}
-Source0:	https://invent.kde.org/pim/libkleo/-/archive/%{gitbranch}/libkleo-%{gitbranchd}.tar.bz2#/libkleo-20240217.tar.bz2
+Source0:	https://invent.kde.org/pim/libkleo/-/archive/%{gitbranch}/libkleo-%{gitbranchd}.tar.bz2#/libkleo-%{git}.tar.bz2
 %else
 Source0: http://download.kde.org/%{ftpdir}/release-service/%{version}/src/libkleo-%{version}.tar.xz
 %endif
