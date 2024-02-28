@@ -1,4 +1,4 @@
-%define git 20240217
+#define git 20240217
 %define gitbranch release/24.02
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 %define major 6
@@ -6,7 +6,7 @@
 %define devname %mklibname KPim6Libkleo -d
 
 Name: plasma6-libkleo
-Version:	24.01.96
+Version:	24.02.0
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
