@@ -35,6 +35,7 @@ BuildRequires: cmake(KPim6TextEdit)
 BuildRequires: cmake(KF6WindowSystem)
 BuildRequires: cmake(KF6Sonnet)
 BuildRequires: cmake(KF6TextWidgets)
+BuildRequires: cmake(KF6Completion)
 BuildRequires: cmake(Gpgmepp)
 BuildRequires: cmake(QGpgmeQt6)
 BuildRequires: boost-devel
