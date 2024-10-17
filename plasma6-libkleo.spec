@@ -20,7 +20,7 @@ Source0:	https://invent.kde.org/pim/libkleo/-/archive/%{gitbranch}/libkleo-%{git
 Source0: http://download.kde.org/%{ftpdir}/release-service/%{version}/src/libkleo-%{version}.tar.xz
 %endif
 Summary: KDE library for PIM handling
-URL: http://kde.org/
+URL: https://kde.org/
 License: GPL
 Group: System/Libraries
 BuildRequires: cmake(ECM)
