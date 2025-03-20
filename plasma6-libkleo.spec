@@ -13,7 +13,7 @@ Version:	24.12.3
 %else
 %define ftpdir stable
 %endif
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/pim/libkleo/-/archive/%{gitbranch}/libkleo-%{gitbranchd}.tar.bz2#/libkleo-%{git}.tar.bz2
 %else
