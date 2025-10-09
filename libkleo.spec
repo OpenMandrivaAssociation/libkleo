@@ -6,7 +6,7 @@
 %define devname %mklibname KPim6Libkleo -d
 
 Name: libkleo
-Version:	25.08.1
+Version:	25.08.2
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
